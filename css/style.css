@@ -307,25 +307,25 @@ font-family: 'Tajawal';
 font-weight: 500;
 text-align: center;
 }
-.coontainer .sec2 .crds{
+.coontainer .crds{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 50px;
 }
-.coontainer .sec2 .card{
+.coontainer .card{
     width: calc(100%/4 - 30px) !important;
 }
-.coontainer .sec2 .crds .time{
+.coontainer  .crds .time{
     height:fit-content;
     padding:10px 20px  0px 20px;
     align-items: center;
     flex-direction: row-reverse;
 }
-.coontainer .sec2 .crds .time div{
+.coontainer .crds .time div{
     height: 60px;
 }
-.coontainer .sec2 .crds .time div span{
+.coontainer .crds .time div span{
     display: flex;
     width: 42px;
     height: 35px;
@@ -341,7 +341,7 @@ justify-content: center;
 color: #FFFFFF;
 position: relative;
 }
-.coontainer .sec2 .crds .time div span:not(.last)::after{
+.coontainer .crds .time div span:not(.last)::after{
     position: absolute;
     content: ":";
     width: fit-content;
@@ -353,7 +353,7 @@ left:115%;
     font-family: 'Syncopate';
 font-weight: 400;
 }
-.coontainer .sec2 .crds .time div p{
+.coontainer .crds .time div p{
 font-family:Syncopate;
 font-weight: 400;
 font-size: 14px;
@@ -361,7 +361,7 @@ display: flex;
 align-items: center;
 color: #B92728;
 }
-.coontainer .sec2 .crds .card-text{
+.coontainer .crds .card-text{
     font-family: 'Tajawal';
 font-weight: 600;
 font-size: 18px;
@@ -369,7 +369,7 @@ line-height: 24px;
 display: flex;
 align-items: center;
 }
-.coontainer .sec2 .crds .details{
+.coontainer .crds .details{
    display: flex;
    justify-content: space-between; 
    font-family: 'Tajawal';
@@ -379,7 +379,7 @@ line-height: 24px;
 color: #B92728;
 align-items: center;
 }
-.coontainer .sec2 .crds .details .price1{
+.coontainer .crds .details .price1{
     /* margin-right:15px; */
     transform: translateX(-35px);
 }
@@ -417,7 +417,135 @@ font-size: 48px;
 height: 90px;
 width: 85%;
 margin: 25px 0;
-
+position: relative;
+}
+.coontainer .sec2 .txt button::after{
+    position: absolute;
+    content: "";
+    width:101%;
+    height:115%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    top:-7.5%;
+    left:-0.5%;
+    background-color: #FFFFFF;
+background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='50' ry='50' stroke='%23B92728FF' stroke-width='2' stroke-dasharray='11%2c 15' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+border-radius: 50px;
 }
 
 /* End Section 2*/
+
+/* Start Section 3*/
+.coontainer .sec3{
+    margin-top:50px;
+    padding: 20px 0;
+    text-align: center;
+    background: #FFF6F2;
+    position: relative;
+}
+.coontainer .sec3 h1{
+    padding-top: 20px;
+margin-bottom: 50px;    
+font-family: 'Tajawal';
+font-weight: 700;
+font-size: 36px;
+color: #212529;
+}
+.bulits2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    display: flex;
+}
+
+.bulits2 li {
+    width: 10px;
+    height: 10px;
+    background: #D9DBE1;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin: 5px;
+    border-radius: 50%;
+
+}
+.bulits2 li::marker{
+    color: transparent;
+}
+
+.bulits2 li.active {
+width: 16px;
+height: 10px;
+background: #B92728;
+border-radius: 100px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+/* End Section 3*/
+
+/* Start Section 4*/
+
+
+.coontainer .sec4{
+    background: #B92728;
+    padding:15px;
+    margin-bottom: 100px;
+}
+.coontainer .sec4 .txt{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color:#FFFFFF;
+    font-family: 'Tajawal';
+    margin: 0 70px;
+    padding: 30px;
+}
+.coontainer .sec4 .txt h1{
+    font-weight: 500;
+font-size: 40px;
+}
+.coontainer .sec4 .txt p{
+    font-weight: 400;
+font-size: 18px;
+}
+.coontainer .sec4 .txt button{
+    background-color: #FFFFFF;
+}
+.coontainer .sec4 .crds{
+    display: flex;
+    align-items: center;
+    margin:50px 100px;
+
+}
+.coontainer .sec4 .crds .crd{
+    position: relative;
+    z-index:10;
+
+}
+.coontainer .sec4 .crds .crd::after{
+    position: absolute;
+    content: "";
+    width:166px;
+    height:166px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:-1;
+    top:-8px;
+    left:-8px;
+    /* background-color: blue; */
+     background-color:transparent;
+     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='white' stroke-width='3' stroke-dasharray='7%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+     border-radius: 100px;
+
+}
+.coontainer .sec4 .crds h3{
+font-family: 'Tajawal';
+font-weight: 500;
+font-size: 20px;
+color: #FFFFFF;
+text-align: center;
+margin-top: 15px;
+}
+/* End Section 4*/
