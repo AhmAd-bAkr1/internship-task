@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     width:99vw;
     overflow-x: hidden;
@@ -195,11 +196,13 @@ cursor: pointer;
 }
 
 .bulits {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     bottom: 0px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    bottom:30px;
 }
 
 .bulits li {
@@ -454,11 +457,12 @@ font-size: 36px;
 color: #212529;
 }
 .bulits2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0px;
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
 }
 
 .bulits2 li {
