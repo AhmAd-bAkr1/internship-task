@@ -31,7 +31,8 @@ body{
     display: flex;
     width: 114px;
     height: 36px;
-    margin-right:4%;
+    margin-right: 4%;
+    margin-left:1.5%;
     cursor: pointer;
     align-items: center;
 }
@@ -66,11 +67,11 @@ margin: auto;
 .coontainer .navBar .navbar .form-control::placeholder{
     opacity:0.6;
 }
-.coontainer .navBar .navbar .Sbar .icon {
+.coontainer .navBar .navbar .Sbar .icon{
 position: relative;
-left:90px;
-height:27px;
-width:27px;
+left:50px;
+height:17px;
+width:17px;
 }
 .coontainer .navBar .navbar .lang {
     position: relative;
@@ -91,7 +92,7 @@ display: flex;
 align-items: center;
 
 }
-.coontainer .navBar .navbar .lang svg{
+.coontainer .navBar .navbar .lang img{
     position: relative;
     height: 7.409999847412109px;
 width: 12px;
@@ -102,7 +103,7 @@ right:5px;
     display: flex;
     margin-left:35px;
 }
-.coontainer .navBar .navbar .advertise svg{
+.coontainer .navBar .navbar .advertise img{
     padding: 0 10px;
 }
 /* End Navbar */
@@ -120,8 +121,9 @@ right:5px;
     padding-left:15px;
     border-left:1px solid #C4C4C4;
 }
-.coontainer .navBar2 .navbar .navbar-nav .dropdown svg{
+.coontainer .navBar2 .navbar .navbar-nav .dropdown img{
     cursor: pointer;
+    align-items: center;
 }
 .coontainer .navBar2 .navbar .navbar-nav .dropdown li a{
     font-family: 'Tajawal';
@@ -266,5 +268,156 @@ margin-top: 50px;
 .coontainer .sec1 .landing .brands .imgs img{
     padding:25px 30px;
 }
-
+.coontainer .sec1 .footer1{
+    margin-top: 50px;
+    background-color: #B92728;
+    display: flex;
+    height: 150px;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+}
+.coontainer .sec1 .footer1 .slide h2{
+    font-family: 'Tajawal';
+    font-weight: 400;
+    font-size: 34px;
+    display: flex;
+    color: #FFFFFF;
+}
 /* End Section 1 */
+
+/* Start Section 2*/
+.coontainer .sec2 .Offer{
+    margin:40px;
+    display: flex;
+    justify-content: space-between;
+}
+.coontainer .sec2 .Offer h2{
+    font-family: 'Tajawal';
+    font-weight: 600;
+    font-size: 28px;
+    align-items: center;
+    color: #212529;
+}
+.coontainer .sec2 .Offer button{
+    width: 120px;
+    background-color: #B92728;
+    color:#FFFFFF;
+font-family: 'Tajawal';
+font-weight: 500;
+text-align: center;
+}
+.coontainer .sec2 .crds{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.coontainer .sec2 .card{
+    width: calc(100%/4 - 30px) !important;
+}
+.coontainer .sec2 .crds .time{
+    height:fit-content;
+    padding:10px 20px  0px 20px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.coontainer .sec2 .crds .time div{
+    height: 60px;
+}
+.coontainer .sec2 .crds .time div span{
+    display: flex;
+    width: 42px;
+    height: 35px;
+    background: #B92728;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Syncopate;
+font-weight: 400;
+font-size: 24px;
+line-height: 16px;
+text-align: center;
+align-items: center;
+justify-content: center;
+color: #FFFFFF;
+position: relative;
+}
+.coontainer .sec2 .crds .time div span:not(.last)::after{
+    position: absolute;
+    content: ":";
+    width: fit-content;
+    height:fit-content;
+    color: #B92728;
+    top:calc(50% - 10px);
+left:115%;
+    font-size: 36px;
+    font-family: 'Syncopate';
+font-weight: 400;
+}
+.coontainer .sec2 .crds .time div p{
+font-family:Syncopate;
+font-weight: 400;
+font-size: 14px;
+display: flex;
+align-items: center;
+color: #B92728;
+}
+.coontainer .sec2 .crds .card-text{
+    font-family: 'Tajawal';
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+}
+.coontainer .sec2 .crds .details{
+   display: flex;
+   justify-content: space-between; 
+   font-family: 'Tajawal';
+font-weight: 700;
+font-size: 36px;
+line-height: 24px;
+color: #B92728;
+align-items: center;
+}
+.coontainer .sec2 .crds .details .price1{
+    /* margin-right:15px; */
+    transform: translateX(-35px);
+}
+.coontainer .sec2 .txt{
+    text-align: center;
+    align-items: center;
+}
+.coontainer .sec2 .txt p{
+    font-family: 'Tajawal';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+color: #212529;
+margin: 25px 0;
+
+}
+.coontainer .sec2 .txt h2{
+font-family: 'Tajawal';
+font-weight: 700;
+font-size: 36px;
+line-height: 24px;
+color: #B92728;
+margin: 25px 0;
+}
+.coontainer .sec2 .txt h2 span{ 
+    color: #212529;
+}
+
+.coontainer .sec2 .txt button{
+    background-color: #B92728;
+    color:#FFFFFF;
+font-family: 'Tajawal';
+font-weight: 700;
+font-size: 48px;
+height: 90px;
+width: 85%;
+margin: 25px 0;
+
+}
+
+/* End Section 2*/
