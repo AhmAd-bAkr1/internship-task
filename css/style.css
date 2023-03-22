@@ -382,7 +382,7 @@ line-height: 24px;
 color: #B92728;
 align-items: center;
 }
-.coontainer .crds .details .price1{
+.price1{
     /* margin-right:15px; */
     transform: translateX(-35px);
 }
@@ -493,7 +493,6 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 .coontainer .sec4{
     background: #B92728;
     padding:15px;
-    margin-bottom: 100px;
 }
 .coontainer .sec4 .txt{
     display: flex;
@@ -553,3 +552,127 @@ text-align: center;
 margin-top: 15px;
 }
 /* End Section 4*/
+
+
+/* Start Section 5*/
+.coontainer .sec5{
+    background: #F2F2F2;
+}
+.coontainer .sec5 .details{
+    display:flex;
+    justify-content: center;
+position: relative;
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+
+}
+.coontainer .sec5 .details h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Tajawal';
+font-weight: 700;
+font-size: 36px;
+color: #212529;
+}
+.coontainer .sec5 .details img{
+    position: absolute;
+    left:30px;
+    cursor: pointer;
+}
+.coontainer .sec5 .details .sec{
+    left:54px;
+    top: 63px;
+}
+.coontainer .sec5 .cerds{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    margin-bottom: 50px;
+}
+.coontainer .sec5 .cerds .main-crd{
+    width:calc(100% / 2.75);
+    padding:25px;
+    background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+position: relative;
+/* margin-left: auto; */
+margin: 0 15px;
+}
+.coontainer .sec5 .cerds .main-crd .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.coontainer .sec5 .cerds .main-crd .content h2{
+
+    font-family: 'Tajawal';
+    font-weight: 500;
+    font-size: 30px;
+    color: #212529;
+}
+.coontainer .sec5 .cerds .main-crd .content img{
+    width: 80px;
+height: 111px;
+}
+.coontainer .sec5 .cerds .main-crd .crd{
+display: flex;
+padding:20px 0;
+padding-bottom:20px;
+margin: 30px;
+}
+.coontainer .sec5 .cerds .main-crd .crd .img img{
+    margin-left:25px;
+}
+.coontainer .sec5 .cerds .main-crd .crd .txt{
+    width: 100%;
+}
+.coontainer .sec5 .cerds .main-crd .crd .txt h3{
+    font-family: 'Tajawal';
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+}
+.coontainer .sec5 .cerds .main-crd .crd .txt p{
+    font-family: 'Tajawal';
+font-weight: 400;
+font-size: 18px;
+color: #323232;
+
+}
+
+.coontainer .sec5 .cerds .main-crd .crd .txt .price{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Tajawal';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 24px;
+    color: #B92728;
+    align-items: center;
+}
+.coontainer .sec5 .cerds .main-crd .crd .txt .pric {
+    position: relative;
+    width:fit-content;
+}
+.coontainer .sec5 .cerds .main-crd .crd .txt .price1{
+    position: absolute;
+    right:-100px;
+}
+.coontainer .sec5 .cerds .main-crd button{
+    width: 120px;
+    background-color: #B92728;
+    color:#FFFFFF;
+font-family: 'Tajawal';
+font-weight: 500;
+text-align: center;
+margin: 10px 0;
+position: relative;
+right:calc(100% - 145px);
+}
+.coontainer .sec5 .cerds .active{
+    position: absolute;
+    left: -15%;
+    /* display: none; */
+}
+/* End Section 5*/
