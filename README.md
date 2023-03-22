@@ -1,2 +1,2 @@
-# internship-task-
+# internship-task
 internship task 
