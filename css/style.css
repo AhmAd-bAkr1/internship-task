@@ -763,3 +763,117 @@ left: 70px;
     rotate: 180deg;
 }
 /* End Section 6*/
+
+/* Start Section 7*/
+.coontainer .sec7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.coontainer .sec7 .icon img{
+    padding: 50px 0;
+}
+.coontainer .sec7 .txt h2{
+    font-family: 'Tajawal';
+    font-weight: 500;
+    font-size: 36px;
+    color: #212529;
+    padding: 10px 0;
+}
+.coontainer .sec7 .txt h2 span{
+    color: #B92728;
+}
+.coontainer .sec7 .sbar{
+padding:50px 0 0 0;    
+display: flex;
+justify-content: center;
+align-items: center;
+width:fit-content;
+flex-direction:column;
+}
+.coontainer .sec7 .sbar input{
+    height: 56px;
+width: 717px;
+left: 0px;
+top: 0px;
+border-radius: 50px;
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+text-align:left;
+border:none;
+outline: none;
+}
+.coontainer .sec7 .sbar button{
+    background-color: #B92728;
+    color: #FFFFFF;
+    font-family: 'Tajawal';
+font-weight: 500;
+font-size: 18px;
+transform: translate(-13px , -50px);
+width:159px;
+height:45px;
+margin-left: auto;
+}
+
+/* End Section 7*/
+
+/* Start Section 8*/
+.coontainer .sec8{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3A08E1F;
+    background: rgba(243, 160, 142, 0.12);
+    padding: 50px 40px;
+}
+.coontainer .sec8 .content{
+    position: relative;
+    padding:0 40px;
+}
+.coontainer .sec8 .content img{
+    padding: 0 0 20px 0;
+}
+.coontainer .sec8 .content p {
+    font-family: 'Tajawal';
+font-weight: 500;
+font-size: 18px;
+padding: 5px 0;
+color: #000000;
+}
+.coontainer .sec8 .content .sm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.coontainer .sec8 .content h3{
+    font-family: 'Tajawal';
+font-weight: 500;
+font-size: 24px;
+color: #B92728;
+padding-bottom:30px;
+}
+.coontainer .sec8 .content div{
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+
+/* End Section 8*/
+
+/* Start Footer */
+.coontainer footer{
+    background-color: #B92728;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coontainer footer h3{
+    font-family: 'Sulphur Point';
+font-weight: 400;
+font-size: 24px;
+color: #FFFFFF;
+margin: 0;
+}
+/* End Footer */
