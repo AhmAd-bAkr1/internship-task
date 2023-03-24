@@ -11,7 +11,7 @@ body {
 
 .coontainer {
     position: relative;
-    width: 99;
+    /* background-color: red; */
 }
 
 /* Start Navbar */
@@ -339,13 +339,15 @@ body {
 /* End Section 1 */
 
 /* Start Section 2*/
-.coontainer .sec2 .Offer {
-    margin: 40px;
+.coontainer .sec2 .Offer,
+.coontainer .mob-sec2 .Offer {
+    margin: 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.coontainer .sec2 .Offer h2 {
+.coontainer .sec2 .Offer h2,
+.coontainer .mob-sec2 .Offer h2 {
     font-family: 'Tajawal';
     font-weight: 600;
     font-size: 28px;
@@ -353,7 +355,8 @@ body {
     color: #212529;
 }
 
-.coontainer .sec2 .Offer button {
+.coontainer .sec2 .Offer button,
+.coontainer .mob-sec2 .Offer button {
     width: 120px;
     background-color: #B92728;
     color: #FFFFFF;
@@ -423,7 +426,8 @@ body {
     color: #B92728;
 }
 
-.coontainer .crds .card-text {
+.coontainer .crds .card-text,
+.coontainer .mob-sec2 .cards .crd .txt .card-text {
     font-family: 'Tajawal';
     font-weight: 600;
     font-size: 18px;
@@ -432,7 +436,8 @@ body {
     align-items: center;
 }
 
-.coontainer .crds .details {
+.coontainer .crds .details,
+.coontainer .mob-sec2 .cards .crd .txt .details {
     display: flex;
     justify-content: space-between;
     font-family: 'Tajawal';
@@ -441,11 +446,6 @@ body {
     line-height: 24px;
     color: #B92728;
     align-items: center;
-}
-
-.price1 {
-    /* margin-right:15px; */
-    transform: translateX(-35px);
 }
 
 .coontainer .sec2 .txt {
@@ -751,11 +751,6 @@ body {
     width: fit-content;
 }
 
-.coontainer .sec5 .cerds .main-crd .crd .txt .price1 {
-    position: absolute;
-    right: -100px;
-}
-
 .coontainer .sec5 .cerds .main-crd button {
     width: 120px;
     background-color: #B92728;
@@ -1024,7 +1019,41 @@ body {
 .coontainer .sec1 .landing .mob-main-img {
     display: none;
 }
+.coontainer .mob-sec2 {
+    display: none;
+}
+.coontainer .mob-sec2 .cards{
+    padding: 50px;
+}
+.coontainer .mob-sec2 .cards .crd{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+border: 1px solid #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin: 20px 0;
+}
+.coontainer .mob-sec2 .cards .crd .img{
+    width:30%;
+}
+.coontainer .mob-sec2 .cards .crd .img img{
+    width: 100%;
+    height:100%;
+}
 
+
+
+@media(max-width:1210px) {
+    .coontainer .crds .details .price{
+        font-size:25px;
+    }
+    .coontainer .crds .time div span:not(.last)::after{
+        left: 100%;
+
+    }
+}
 @media(max-width:1100px) {
     .coontainer .navBar {
         display: none;
@@ -1054,9 +1083,64 @@ body {
     .coontainer .mob-navBar2 .navbar .place {
         align-items: center;
     }
+    .coontainer .sec2 {
+        display: none;
+    }
+    .coontainer .mob-sec2 {
+        display: block;
+        width: 100%;
+        background: #FFF6F2;
+        padding: 50px 0;
+    }
+    .tim{
+        background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+padding: 5px;
+font-family: 'Syncopate';
+font-weight: 400;
+font-size:20px;
+text-align: center;
+color: #000000;
+    }
 
+    .price{
+        font-size: 25px;
+    }
+    .day{
+        text-align: center;
+    }
+    .coontainer .mob-sec2 .active{
+        display: flex;
+        flex-direction: row !important;
+    }
+    .coontainer .mob-sec2 .Offer {
+        margin: 50px 20px;
+    }
 }
-
+@media(max-width:760px) {
+    .coontainer .mob-sec2 .cards .crd .img{
+    width:50%;
+    }
+  .coontainer .mob-sec2 .cards .crd .txt .card-text .p{
+    font-family: 'Tajawal';
+font-weight: 400;
+font-size: 10px;
+text-align: center;
+color: #323232;
+}
+  .card-body{
+    padding: 10px !important;
+  }
+  .coontainer .crds .details, .coontainer .mob-sec2 .cards .crd .txt .details {
+    justify-content: space-around;
+  }
+  .coontainer .mob-sec2 h2{
+    margin-bottom: 0 !important;
+  }
+  .coontainer .mob-sec2 p{
+margin-bottom: 0 !important;
+}
+}
 @media(max-width:570px) {
 
     .coontainer .sec1 .landing .small-imgs .crd1,
@@ -1085,6 +1169,28 @@ body {
 
     .coontainer .sec1 .landing .mob-main-img {
         display: block;
-
+    }
+  .coontainer .mob-sec2 h2{
+    font-size:0.9rem !important;
+  }
+  .coontainer .mob-sec2 p{
+    font-size:0.8rem !important;
+  }
+  .coontainer .mob-sec2 .price{
+    display: none;
+  }
+    
+}
+@media(max-width:450px) {
+    .coontainer .mob-sec2 .cards {
+        padding: 10px;
+        margin-left:10px;
+    }
+    .coontainer .mob-sec2 .cards .crd .img {
+        width: 100%;
+    }
+    .tim {
+        padding: 2px;
+        font-size: 15px;
     }
 }
