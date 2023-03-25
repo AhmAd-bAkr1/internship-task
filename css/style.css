@@ -11,7 +11,6 @@ body {
 
 .coontainer {
     position: relative;
-    /* background-color: red; */
 }
 
 /* Start Navbar */
@@ -356,7 +355,8 @@ body {
 }
 
 .coontainer .sec2 .Offer button,
-.coontainer .mob-sec2 .Offer button {
+.coontainer .mob-sec2 .Offer button,
+.coontainer .mob-sec2 .cards button {
     width: 120px;
     background-color: #B92728;
     color: #FFFFFF;
@@ -431,7 +431,6 @@ body {
     font-family: 'Tajawal';
     font-weight: 600;
     font-size: 18px;
-    line-height: 24px;
     display: flex;
     align-items: center;
 }
@@ -448,12 +447,14 @@ body {
     align-items: center;
 }
 
-.coontainer .sec2 .txt {
+.coontainer .sec2 .txt,
+.coontainer .mob-sec2 .txt {
     text-align: center;
     align-items: center;
 }
 
-.coontainer .sec2 .txt p {
+.coontainer .sec2 .txt p,
+.coontainer .mob-sec2 .txt .p {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 700;
@@ -463,20 +464,22 @@ body {
 
 }
 
-.coontainer .sec2 .txt h2 {
+.coontainer .sec2 .txt h2,
+.coontainer .mob-sec2 .txt h2 {
     font-family: 'Tajawal';
     font-weight: 700;
     font-size: 36px;
-    line-height: 24px;
     color: #B92728;
     margin: 25px 0;
 }
 
-.coontainer .sec2 .txt h2 span {
+.coontainer .sec2 .txt h2 span,
+.coontainer .mob-sec2 .txt h2 span {
     color: #212529;
 }
 
-.coontainer .sec2 .txt button {
+.coontainer .sec2 .txt button,
+.coontainer .mob-sec2 .txt button {
     background-color: #B92728;
     color: #FFFFFF;
     font-family: 'Tajawal';
@@ -488,7 +491,8 @@ body {
     position: relative;
 }
 
-.coontainer .sec2 .txt button::after {
+.coontainer .sec2 .txt button::after,
+.coontainer .mob-sec2 .txt button::after {
     position: absolute;
     content: "";
     width: 101%;
@@ -497,8 +501,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: -1;
-    top: -7.5%;
-    left: -0.5%;
+    top: -7%;
+    left: -0.4%;
     background-color: #FFFFFF;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='50' ry='50' stroke='%23B92728FF' stroke-width='2' stroke-dasharray='11%2c 15' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 50px;
@@ -1019,41 +1023,49 @@ body {
 .coontainer .sec1 .landing .mob-main-img {
     display: none;
 }
+
 .coontainer .mob-sec2 {
     display: none;
 }
-.coontainer .mob-sec2 .cards{
+
+.coontainer .mob-sec2 .cards {
     padding: 50px;
+    text-align: center;
 }
-.coontainer .mob-sec2 .cards .crd{
+
+.coontainer .mob-sec2 .cards .crd {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
-border: 1px solid #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-margin: 20px 0;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 20px 0;
 }
-.coontainer .mob-sec2 .cards .crd .img{
-    width:30%;
+
+.coontainer .mob-sec2 .cards .crd .img {
+    width: 30%;
 }
-.coontainer .mob-sec2 .cards .crd .img img{
+
+.coontainer .mob-sec2 .cards .crd .img img {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
 
 
 @media(max-width:1210px) {
-    .coontainer .crds .details .price{
-        font-size:25px;
+    .coontainer .crds .details .price {
+        font-size: 25px;
     }
-    .coontainer .crds .time div span:not(.last)::after{
-        left: 100%;
+
+    .coontainer .crds .time div span:not(.last)::after {
+        left: 105%;
 
     }
 }
+
 @media(max-width:1100px) {
     .coontainer .navBar {
         display: none;
@@ -1083,64 +1095,150 @@ margin: 20px 0;
     .coontainer .mob-navBar2 .navbar .place {
         align-items: center;
     }
+
+    .coontainer .crds .card-text {
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .coontainer .crds .details img {
+        width: 50%;
+    }
+
+    .coontainer .crds .details .price {
+        font-size: 18px;
+    }
+
+    .coontainer .crds .time div span {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .coontainer .crds .time {
+        padding: 10px 5px 0 5px;
+    }
+
+    .coontainer .crds .time div {
+        width: calc(100% / 4 - 7px);
+    }
+
+    .coontainer .crds .time div span:not(.last)::after {
+        display: none;
+    }
+
+    .coontainer .crds .time div p {
+        line-height: 27px;
+        font-size: 11px;
+    }
+    .coontainer .mob-sec2 .txt button{
+        font-size: 30px;
+    }
+    .coontainer .mob-sec2 .txt h2{
+        font-size: 26px;
+    }
+    .coontainer .mob-sec2 .text{
+        background: #FFFFFF;
+        padding: 10px 0;
+        margin-left: 15px;
+    }
+}
+
+@media(max-width:760px) {
+    .coontainer .mob-sec2 .cards .crd .img {
+        width: 50%;
+    }
+
+    .coontainer .mob-sec2 .cards .crd .txt .card-text .p {
+        font-family: 'Tajawal';
+        font-weight: 400;
+        font-size: 10px;
+        text-align: center;
+        color: #323232;
+    }
+
+    .card-body {
+        padding: 10px !important;
+    }
+
+    .coontainer .mob-sec2 h2 {
+        margin-bottom: 0 !important;
+    }
+
+    .coontainer .mob-sec2 p {
+        margin-bottom: 0 !important;
+    }
+
+}
+
+@media(max-width:700px) {
     .coontainer .sec2 {
         display: none;
     }
+
     .coontainer .mob-sec2 {
         display: block;
         width: 100%;
         background: #FFF6F2;
         padding: 50px 0;
     }
-    .tim{
+
+    .tim {
         background: #FFFFFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-padding: 5px;
-font-family: 'Syncopate';
-font-weight: 400;
-font-size:20px;
-text-align: center;
-color: #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 5px;
+        font-family: 'Syncopate';
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
     }
 
-    .price{
+    .price {
         font-size: 25px;
     }
-    .day{
+
+    .day {
         text-align: center;
     }
-    .coontainer .mob-sec2 .active{
+
+    .coontainer .mob-sec2 .active {
         display: flex;
         flex-direction: row !important;
     }
+
     .coontainer .mob-sec2 .Offer {
-        margin: 50px 20px;
+        margin: 0px 20px;
+        align-items: center;
     }
-}
-@media(max-width:760px) {
-    .coontainer .mob-sec2 .cards .crd .img{
-    width:50%;
+
+    .coontainer .mob-sec2 .cards .crd .txt {
+        width: 50%;
     }
-  .coontainer .mob-sec2 .cards .crd .txt .card-text .p{
-    font-family: 'Tajawal';
-font-weight: 400;
-font-size: 10px;
-text-align: center;
-color: #323232;
+    .coontainer .sec3{
+        margin: 0;
+    }
+    .coontainer .sec3 h1{
+        font-size: 20px ;
+        margin-left: 15px;
+    }
+    .coontainer .sec3 .crds {
+        flex-direction: column;
+        margin-left: 20px;
+        padding: 15px;
+    }
+    .coontainer .sec3 .crds .card{
+        width:90% !important;
+    }
+    .coontainer .sec3 .crds .card:not(:first-child){
+    display: none;
+    }
+   .coontainer .sec3 .crds .card-body {
+    padding: 1rem 1rem !important;
+   }
 }
-  .card-body{
-    padding: 10px !important;
-  }
-  .coontainer .crds .details, .coontainer .mob-sec2 .cards .crd .txt .details {
-    justify-content: space-around;
-  }
-  .coontainer .mob-sec2 h2{
-    margin-bottom: 0 !important;
-  }
-  .coontainer .mob-sec2 p{
-margin-bottom: 0 !important;
-}
-}
+
 @media(max-width:570px) {
 
     .coontainer .sec1 .landing .small-imgs .crd1,
@@ -1170,27 +1268,170 @@ margin-bottom: 0 !important;
     .coontainer .sec1 .landing .mob-main-img {
         display: block;
     }
-  .coontainer .mob-sec2 h2{
-    font-size:0.9rem !important;
-  }
-  .coontainer .mob-sec2 p{
-    font-size:0.8rem !important;
-  }
-  .coontainer .mob-sec2 .price{
-    display: none;
-  }
-    
+
+    .coontainer .mob-sec2 h2 {
+        font-size: 0.9rem !important;
+        margin: 0 !important;
+    }
+
+    .coontainer .mob-sec2 p {
+        font-size: 0.8rem !important;
+    }
+
+    .coontainer .mob-sec2 .price {
+        display: none;
+    }
+    .coontainer .mob-sec2 .txt .p{
+        font-size: 18px !important;
+    }
+    .coontainer .mob-sec2 .txt .h2{
+        font-size: 14px !important;
+    }
+    .coontainer .mob-sec2 .txt button{
+        font-size: 17px;
+        height: 65px;
+    }
 }
+
 @media(max-width:450px) {
     .coontainer .mob-sec2 .cards {
         padding: 10px;
-        margin-left:10px;
+        margin-left: 10px;
     }
-    .coontainer .mob-sec2 .cards .crd .img {
-        width: 100%;
-    }
+
     .tim {
-        padding: 2px;
+        padding: 5px;
         font-size: 15px;
     }
+     .coontainer .mob-sec2 .Offer button{
+        width: 70px;
+        font-size: 10px;
+     }
+     .coontainer .sec1 .landing .small-imgs .crd {
+        width: 50%;
+    }
+    .coontainer .sec1 .landing .brands .imgs img {
+        padding: 5px 20px;
+        width: calc(100% / 3 - 31px);
+    }
+}
+@media(max-width:360px){
+.coontainer .mob-sec2 .cards .crd .txt .details img{
+    width: 60%;
+    
+}
+.coontainer .mob-sec2 p{
+    font-size: 9px !important;
+}
+.coontainer .mob-sec2 h2{
+    font-size: 10px !important;
+}
+.tim {
+    font-size: 10px;
+    padding: 3px;
+}
+.card-body {
+    padding: 5px 5px 0 0 !important;
+}
+.coontainer .mob-sec2 .cards .crd .txt .time{
+        width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.coontainer .mob-sec2 .cards .crd .txt .time .day{
+    margin: 3px;
+}
+.coontainer .sec1 .landing .brands .imgs img {
+    padding: 5px 5px;
+    width: calc(100% / 3 - 15px);
+}
+.coontainer .sec1 .landing .brands h1{
+    font-size: 22px;
+}
+.coontainer .sec1 .landing .small-imgs span{
+    font-size: 15px;
+}
+.coontainer .mob-sec2 .txt .p{
+    font-size: 13px !important;
+}
+.coontainer .mob-sec2 .txt .h2{
+    font-size: 10px !important;
+}
+.coontainer .mob-sec2 .txt button{
+    font-size: 11px;
+    height: 40px;
+}
+}
+@media(max-width:255px) {
+    .coontainer .mob-sec2 p{
+        font-size: 6px !important;
+    }
+    .coontainer .mob-sec2 h2{
+        font-size: 7px !important;
+    }
+    .tim {
+        font-size:7px;
+        padding: 2px;
+    }
+    .coontainer .mob-sec2 .Offer button{
+font-size: 5px;
+width:50px;
+    }
+    .coontainer .sec1 .landing .small-imgs span{
+        font-size: 10px;
+    }
+    .coontainer .sec1 .landing .small-imgs .crd {
+        padding: 10px 10px 10px 20px;
+    }
+   .coontainer .mob-navBar2 .navbar .place h3{
+    font-size: 10px;
+    width: 37px;
+    margin-left: 4px;
+   }
+   .coontainer .mob-navBar2 .navbar .place img{
+    width: 20px;
+   }
+   .coontainer .mob-navBar2 .navbar .place img:last-child{
+    width: 10px;
+   }
+   .coontainer .mob-navBar2 .navbar .lang{
+    width: 25px;
+   }
+ .coontainer .mob-navBar2 .navbar .lang h3{
+    font-size: 11px;
+ }
+  .coontainer .mob-navBar2 .navbar{
+    height: fit-content;
+  }
+  .coontainer .mob-navBar .cntainer{
+    width:70%;
+  }
+  .coontainer .mob-navBar .navbar .form-control {
+    padding:10px 5px;
+  }
+.coontainer .mob-navBar .navbar .form-control::placeholder {
+    font-size: 10px;
+}
+.coontainer .mob-navBar .navbar .Sbar .icon {
+    left: 30px;
+    height: 10px;
+    width: 10px;
+    top: 3px;
+}
+.coontainer .sec1 .footer1 .slide h2 {
+    font-size: 20px;
+}
+.coontainer .sec1 .footer1 .slide img {
+    width: 40%;
+}
+.coontainer .mob-sec2 .txt .p{
+    font-size: 13px !important;
+}
+.coontainer .mob-sec2 .txt .h2{
+    font-size: 8px !important;
+}
+.coontainer .mob-sec2 .txt button{
+    font-size: 9px;
+    height: 40px;
+}
 }
