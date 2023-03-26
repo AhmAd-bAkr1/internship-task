@@ -1021,6 +1021,11 @@ body {
     font-size: 24px;
     color: #FFFFFF;
     margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.coontainer footer h3 img {
+    width: 3%;
 }
 
 /* End Footer */
@@ -1207,6 +1212,22 @@ width: fit-content;
     .coontainer .sec5 .details img{
         display: none;
     }
+    .coontainer .sec8{
+        padding: 30px 0;
+    }
+    .coontainer .sec8 .content{
+        padding:0 10px;
+    }
+    .coontainer .sec8 .content p{
+        font-size: 15px;
+    }
+    .coontainer .sec8 .content .sm{
+        width: 80%;
+    }
+    .coontainer .sec8 .content h3{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
 }
 
 @media(max-width:760px) {
@@ -1263,7 +1284,8 @@ width: fit-content;
         font-size: 25px;
     }
     .coontainer .sec6 .txt{
-        width: 90%;
+        width: fit-content;
+        text-align: center;
     }
     .coontainer .sec6 .txt p{
         font-size: 13px;
@@ -1399,6 +1421,12 @@ width: fit-content;
     .coontainer .mob-sec4 .txt p {
         font-size: 15px;
     }
+    .coontainer .sec8 .content p{
+        font-size: 12px;
+    }
+    .coontainer .sec8 .content .sm{
+        width: 40%;
+    }
 }
 
 @media(max-width:570px) {
@@ -1471,6 +1499,22 @@ width: fit-content;
     .coontainer .mob-sec4 .crds .crd6 {
         display: none;
     }
+    .coontainer .sec8{
+        flex-direction: column;
+
+    }
+    .coontainer .sec8 .content .sm{
+        width: 50%;
+    }
+    .coontainer footer {
+        padding: 20px 0;
+    }
+    .coontainer footer h3{
+        font-size:15px;
+    }
+    .coontainer footer h3 img {
+        width: 4%;
+    }
 }
 
 @media(max-width:450px) {
@@ -1516,6 +1560,9 @@ width: fit-content;
     .coontainer .sec7 .sbar button{
         width: 80px;
         font-size: 11px;
+    }
+    .coontainer footer h3 img {
+        width: 5%;
     }
 }
 
@@ -1663,6 +1710,12 @@ width: fit-content;
     }
     .coontainer .sec7 .txt h2{
         font-size: 11px;
+    }
+    .coontainer footer h3{
+        font-size:10px;
+    }
+    .coontainer footer h3 img {
+        width: 6%;
     }
 
 }
@@ -1844,6 +1897,20 @@ width: fit-content;
     top: -3%;
     left: 28%;
     }
+    .coontainer .sec8 .content p{
+        font-size: 12px;
+    }
     
+    .coontainer .sec7 .sbar button{
+        display: flex;
+        align-items: center;
+        width: 50px;
+        font-size: 5px;
+        height: 15px !important;
+        transform: translate(-21px, -27px);
 
+    }
+    .coontainer footer h3{
+        font-size:7px;
+    }
 }
