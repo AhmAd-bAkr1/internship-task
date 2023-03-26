@@ -159,31 +159,53 @@
       <section class="sec1">
         <div class="landing">
           <div class="main-img">
-            <img src="imgs/s2 1.png" alt="" />
-            <span class="arrow-r"
-              ><svg
-                width="30"
-                height="30"
-                viewBox="0 0 30 30"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="15"
-                  cy="15"
-                  r="15"
-                  transform="matrix(-1 0 0 1 30 0)"
-                  fill="#C4C4C4"
-                  fill-opacity="0.7"
-                />
-                <path
-                  d="M17.71 18.88L13.83 15L17.71 11.12C18.1 10.73 18.1 10.1 17.71 9.70998C17.32 9.31998 16.69 9.31998 16.3 9.70998L11.71 14.3C11.32 14.69 11.32 15.32 11.71 15.71L16.3 20.3C16.69 20.69 17.32 20.69 17.71 20.3C18.09 19.91 18.1 19.27 17.71 18.88Z"
-                  fill="#323232"
-                />
-              </svg>
-            </span>
-            <span class="arrow-l"
-              ><svg
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/s2 1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/s2 2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/s2 3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/s2 4.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"><svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="15"
+                    cy="15"
+                    r="15"
+                    transform="matrix(-1 0 0 1 30 0)"
+                    fill="#C4C4C4"
+                    fill-opacity="0.7"
+                  />
+                  <path
+                    d="M17.71 18.88L13.83 15L17.71 11.12C18.1 10.73 18.1 10.1 17.71 9.70998C17.32 9.31998 16.69 9.31998 16.3 9.70998L11.71 14.3C11.32 14.69 11.32 15.32 11.71 15.71L16.3 20.3C16.69 20.69 17.32 20.69 17.71 20.3C18.09 19.91 18.1 19.27 17.71 18.88Z"
+                    fill="#323232"
+                  />
+                </svg></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true">
+                  <svg
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -202,13 +224,10 @@
                   fill="#323232"
                 />
               </svg>
-            </span>
-            <ul class="bulits">
-              <li></li>
-              <li></li>
-              <li class="active"></li>
-              <li></li>
-            </ul>
+                </span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
           <div class="mob-main-img">
             <img src="imgs/mob-main-img.png" alt="" />
@@ -287,20 +306,20 @@
         <div class="crds">
           <div class="card">
             <div class="time d-flex justify-content-around">
-              <div class="day">
-                <span>2</span>
+              <div  class="day">
+                <span class="days"></span>
                 <p>day</p>
               </div>
-              <div class="day">
-                <span>12</span>
+              <div  class="day">
+                <span class="hr"></span>
                 <p>hrs</p>
               </div>
-              <div class="day">
-                <span>03</span>
+              <div  class="day">
+                <span class="min"></span>
                 <p>min</p>
               </div>
               <div class="day">
-                <span class="last">15</span>
+                <span class="secend" class="last"></span>
                 <p>sec</p>
               </div>
             </div>
@@ -315,20 +334,20 @@
           </div>
           <div class="card">
             <div class="time d-flex justify-content-around">
-              <div class="day">
-                <span>2</span>
+              <div  class="day">
+                <span class="days"></span>
                 <p>day</p>
               </div>
-              <div class="day">
-                <span>12</span>
+              <div  class="day">
+                <span class="hr"></span>
                 <p>hrs</p>
               </div>
-              <div class="day">
-                <span>03</span>
+              <div  class="day">
+                <span class="min"></span>
                 <p>min</p>
               </div>
               <div class="day">
-                <span class="last">15</span>
+                <span class="secend" class="last"></span>
                 <p>sec</p>
               </div>
             </div>
@@ -343,20 +362,20 @@
           </div>
           <div class="card">
             <div class="time d-flex justify-content-around">
-              <div class="day">
-                <span>2</span>
+              <div  class="day">
+                <span class="days"></span>
                 <p>day</p>
               </div>
-              <div class="day">
-                <span>12</span>
+              <div  class="day">
+                <span class="hr"></span>
                 <p>hrs</p>
               </div>
-              <div class="day">
-                <span>03</span>
+              <div  class="day">
+                <span class="min"></span>
                 <p>min</p>
               </div>
               <div class="day">
-                <span class="last">15</span>
+                <span class="secend" class="last"></span>
                 <p>sec</p>
               </div>
             </div>
@@ -371,20 +390,20 @@
           </div>
           <div class="card">
             <div class="time d-flex justify-content-around">
-              <div class="day">
-                <span>2</span>
+              <div  class="day">
+                <span class="days"></span>
                 <p>day</p>
               </div>
-              <div class="day">
-                <span>12</span>
+              <div  class="day">
+                <span class="hr"></span>
                 <p>hrs</p>
               </div>
-              <div class="day">
-                <span>03</span>
+              <div  class="day">
+                <span class="min"></span>
                 <p>min</p>
               </div>
               <div class="day">
-                <span class="last">15</span>
+                <span class="secend" class="last"></span>
                 <p>sec</p>
               </div>
             </div>
