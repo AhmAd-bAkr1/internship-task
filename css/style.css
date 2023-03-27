@@ -232,32 +232,6 @@ body {
     right: 15px;
 }
 
-.bulits {
-    position: relative;
-    bottom: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    bottom: 30px;
-}
-
-.bulits li {
-    width: 20px;
-    height: 0;
-    border: 2px solid #212529;
-    margin: 5px;
-
-}
-
-.bulits li::marker {
-    color: transparent;
-}
-
-.bulits li.active {
-    border: 2px solid #B92728;
-}
-
 .coontainer .sec1 .landing .small-imgs {
     flex-wrap: wrap;
     padding-top: 30px;
@@ -528,35 +502,28 @@ body {
     color: #212529;
 }
 
-.bulits2 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding: 0;
+.bulits button {
+    width: 15px !important;
+    height: 0px !important;
+    background: #D9DBE1 !important;
+    transform: matrix(-1, 0, 0, 1, 0, 0) !important;
+    margin: 5px !important;
+    border-radius: 50% !important;
+    border-bottom: 6px solid transparent !important;
 }
 
-.bulits2 li {
-    width: 10px;
-    height: 10px;
-    background: #D9DBE1;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    margin: 5px;
-    border-radius: 50%;
-
+.bulits::marker {
+    color: transparent !important;
 }
 
-.bulits2 li::marker {
-    color: transparent;
+.bulits .active {
+    width: 25px !important;
+    background: #B92728 !important;
+    border-radius: 100px !important;
+    transform: matrix(-1, 0, 0, 1, 0, 0) !important;
 }
-
-.bulits2 li.active {
-    width: 16px;
-    height: 10px;
-    background: #B92728;
-    border-radius: 100px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+.mob-sec4 .bulits .active{
+    background-color: #FFFFFF !important;
 }
 
 /* End Section 3*/
@@ -804,8 +771,8 @@ body {
     background-color: #B92728;
     display: flex;
     align-items: center;
-    padding: 80px 0;
-    padding-right: 200px;
+    padding: 50px 0;
+    padding-right: 100px;
 }
 
 .coontainer .sec6 .img {
@@ -1024,6 +991,7 @@ body {
     width: 100%;
     text-align: center;
 }
+
 .coontainer footer h3 img {
     width: 3%;
 }
@@ -1064,7 +1032,6 @@ body {
 }
 
 .coontainer .mob-sec2 .cards .crd {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
@@ -1087,6 +1054,13 @@ body {
     display: none;
 }
 
+.coontainer .sec3 .mob-slide {
+    display: none;
+}
+
+.crda{
+    display: none;
+}
 
 @media(max-width:1210px) {
     .coontainer .crds .details .price {
@@ -1107,14 +1081,19 @@ body {
     .coontainer .mob-sec4 .txt {
         margin: 0;
     }
-    .coontainer .sec5 .cerds{
+
+    .coontainer .sec5 .cerds {
         justify-content: center;
+        flex-direction: column;
     }
-    .coontainer .sec5 .cerds .main3{
+
+    .coontainer .sec5 .cerds .main3 {
         display: none;
     }
-    .coontainer .sec5 .cerds .main-crd{
-width: fit-content;
+
+    .coontainer .sec5 .cerds .main-crd {
+        width: fit-content;
+        margin: 15px;
     }
 }
 
@@ -1197,34 +1176,44 @@ width: fit-content;
         background: #FFFFFF;
         padding: 10px 0;
     }
+
     .coontainer .sec5 .cerds .main-crd .crd .txt .price {
         font-size: 25px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt h3{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt h3 {
         font-size: 18px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt p{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt p {
         font-size: 15px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt .price img{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt .price img {
         width: 40%;
     }
-    .coontainer .sec5 .details img{
+
+    .coontainer .sec5 .details img {
         display: none;
     }
-    .coontainer .sec8{
+
+    .coontainer .sec8 {
         padding: 30px 0;
     }
-    .coontainer .sec8 .content{
-        padding:0 10px;
+
+    .coontainer .sec8 .content {
+        padding: 0 10px;
     }
-    .coontainer .sec8 .content p{
+
+    .coontainer .sec8 .content p {
         font-size: 15px;
     }
-    .coontainer .sec8 .content .sm{
+
+    .coontainer .sec8 .content .sm {
         width: 80%;
     }
-    .coontainer .sec8 .content h3{
+
+    .coontainer .sec8 .content h3 {
         font-size: 20px;
         padding-bottom: 10px;
     }
@@ -1254,94 +1243,85 @@ width: fit-content;
     .coontainer .mob-sec2 p {
         margin-bottom: 0 !important;
     }
-    .coontainer .sec5 .cerds .main2{
+
+    .coontainer .sec5 .cerds .main2 {
         display: none;
     }
-    .coontainer .sec5 .cerds .main-crd button{
+
+    .coontainer .sec5 .cerds .main-crd button {
         position: static;
         display: block;
-    margin:auto;
-    
+        margin: 20px auto 0 auto;
+
     }
-    .coontainer .sec5 .cerds .main-crd .crd:not(:last-child){
+
+    .coontainer .sec5 .cerds .main-crd .crd:not(:last-child) {
         border-bottom: 1px solid #C4C4C4;
     }
 
-    .coontainer .sec6{
+    .coontainer .sec6 {
         padding: 50px 0;
-    flex-direction: column;
-    text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
-    .coontainer .sec6 .rate .icn-rate{
+
+    .coontainer .sec6 .rate .icn-rate {
         display: none;
     }
-    .coontainer .sec6 .rate{
+
+    .coontainer .sec6 .rate {
         justify-content: center;
         width: 100%;
         padding-top: 10px;
     }
-    .coontainer .sec6 .txt h2{
+
+    .coontainer .sec6 .txt h2 {
         font-size: 25px;
     }
-    .coontainer .sec6 .txt{
+
+    .coontainer .sec6 .txt {
         width: fit-content;
         text-align: center;
-    }
-    .coontainer .sec6 .txt p{
-        font-size: 13px;
-    line-height: 30px;
+        padding:10px;
+        margin:0 ;
     }
 
-    .coontainer .sec6 .txt .icun {
-        bottom: -45px;
-        left:15px;
+    .coontainer .sec6 .txt p {
+        font-size: 13px;
+        line-height: 30px;
     }
-    .coontainer .sec6 .txt .icun2 {
-        bottom: -45px;
-        left:60px;
- 
-    }
-    .coontainer .sec6 .txt .icun img,
-    .coontainer .sec6 .txt .icun2 img{
-        width: 50%;
-    }
-    .coontainer .sec6 .txt .icun .vector{
-        left: 27px;
-    bottom: 12px;
-    width: 10%;
-    }
-    .coontainer .sec6 .txt .icun2 .vector2{
-        left: 28px;
-        bottom: 12px;
-        width: 10%;
-    }
-    .coontainer .sec7 .txt h2{
+    .coontainer .sec7 .txt h2 {
         font-size: 16px;
         text-align: center;
     }
-    .coontainer .sec7 .sbar input{
+
+    .coontainer .sec7 .sbar input {
         width: 90vw;
     }
-    .coontainer .sec7{
-        padding: 20px 0 ;
+
+    .coontainer .sec7 {
+        padding: 20px 0;
     }
-    .coontainer .sec7 .sbar{
+
+    .coontainer .sec7 .sbar {
         padding-top: 20px;
     }
-    .coontainer .sec7 .icon img{
+
+    .coontainer .sec7 .icon img {
         width: 50%;
         margin: auto;
         display: flex;
     }
-    
+
 }
 
-.carousel-indicators .active{
-    background-color: #B92728 !important;
-}
-.carousel-indicators button{
-    background-color: #212529 !important;
+
+.sec1 .carousel-indicators button {
+    background-color: #212529;
     opacity: 1 !important;
+}
+.carousel-indicators .active {
+    background-color: #B92728 !important;
 }
 
 @media(max-width:700px) {
@@ -1415,6 +1395,14 @@ width: fit-content;
         padding: 1rem 1rem !important;
     }
 
+    .coontainer .sec3 .main-slide {
+        display: none;
+    }
+
+    .coontainer .sec3 .mob-slide {
+        display: block;
+    }
+
     .coontainer .sec4 .txt,
     .coontainer .mob-sec4 .txt {
         padding: 5px;
@@ -1429,10 +1417,12 @@ width: fit-content;
     .coontainer .mob-sec4 .txt p {
         font-size: 15px;
     }
-    .coontainer .sec8 .content p{
+
+    .coontainer .sec8 .content p {
         font-size: 12px;
     }
-    .coontainer .sec8 .content .sm{
+
+    .coontainer .sec8 .content .sm {
         width: 40%;
     }
 }
@@ -1500,26 +1490,23 @@ width: fit-content;
     .coontainer .mob-sec4 {
         display: block;
     }
-
-    .coontainer .mob-sec4 .crds .crd3,
-    .coontainer .mob-sec4 .crds .crd4,
-    .coontainer .mob-sec4 .crds .crd5,
-    .coontainer .mob-sec4 .crds .crd6 {
-        display: none;
-    }
-    .coontainer .sec8{
+    .coontainer .sec8 {
         flex-direction: column;
 
     }
-    .coontainer .sec8 .content .sm{
+
+    .coontainer .sec8 .content .sm {
         width: 50%;
     }
+
     .coontainer footer {
         padding: 20px 0;
     }
-    .coontainer footer h3{
-        font-size:15px;
+
+    .coontainer footer h3 {
+        font-size: 15px;
     }
+
     .coontainer footer h3 img {
         width: 4%;
     }
@@ -1556,19 +1543,24 @@ width: fit-content;
     .coontainer .mob-sec4 .txt p {
         font-size: 12px;
     }
-    .coontainer .sec5 .details{
+
+    .coontainer .sec5 .details {
         padding: 20px 0;
     }
-    .coontainer .sec5 .details h1{
+
+    .coontainer .sec5 .details h1 {
         font-size: 20px;
     }
-    .coontainer .sec7 .sbar input::placeholder{
+
+    .coontainer .sec7 .sbar input::placeholder {
         font-size: 15px;
     }
-    .coontainer .sec7 .sbar button{
+
+    .coontainer .sec7 .sbar button {
         width: 80px;
         font-size: 11px;
     }
+
     .coontainer footer h3 img {
         width: 5%;
     }
@@ -1647,81 +1639,102 @@ width: fit-content;
         top: -5px;
         left: -6px !important;
     }
+
     .coontainer .mob-sec4 .crds h3 {
         font-size: 12px;
     }
+
     .coontainer .sec5 .cerds .main-crd {
         padding: 10px;
     }
+
     .coontainer .sec5 .cerds .main-crd .crd .txt .price {
         font-size: 15px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt h3{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt h3 {
         font-size: 13px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt p{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt p {
         font-size: 10px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt .price img{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt .price img {
         width: 40%;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .img img{
+
+    .coontainer .sec5 .cerds .main-crd .crd .img img {
         width: 100%;
         padding: 0 10px;
     }
-    .coontainer .sec5 .cerds .main-crd .content h2{
+
+    .coontainer .sec5 .cerds .main-crd .content h2 {
         font-size: 20px;
     }
+
     .coontainer .sec5 .cerds .main-crd .content img {
         width: 40px;
         height: 55.5px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd{
+
+    .coontainer .sec5 .cerds .main-crd .crd {
         padding: 0;
     }
-    .coontainer .sec5 .cerds .main-crd button{
-    width: 43%;
-    font-size: 10px;
-    margin-top: 10px;
+
+    .coontainer .sec5 .cerds .main-crd button {
+        width: 43%;
+        font-size: 10px;
+        margin-top: 10px;
     }
 
-    .coontainer .sec6 .rate{
+    .coontainer .sec6 .rate {
         justify-content: center;
         width: 100%;
         padding-top: 10px;
     }
-    .coontainer .sec6 .txt h2{
+
+    .coontainer .sec6 .txt h2 {
         font-size: 22px;
     }
-    .coontainer .sec6 .txt p{
-        font-size:9px;
-    line-height: 30px;
+
+    .coontainer .sec6 .txt p {
+        font-size: 9px;
+        line-height: 30px;
     }
+
     .coontainer .sec6 .img img {
         width: 75%;
     }
-    .coontainer .sec6 .img::after{
+
+    .coontainer .sec6 .img::after {
         height: 106%;
         width: 80%;
         top: -3%;
         left: 10%;
     }
-    .coontainer .sec7 .sbar input{
+
+    .coontainer .sec7 .sbar input {
         height: 40px;
     }
-    .coontainer .sec7 .sbar input::placeholder{
+
+    .coontainer .sec7 .sbar input::placeholder {
         font-size: 10px;
     }
-    .coontainer .sec7 .sbar button{
+
+    .coontainer .sec7 .sbar button {
         transform: translate(-13px, -35px);
-    height: 30px;
+        height: 30px;
     }
-    .coontainer .sec7 .txt h2{
+
+    .coontainer .sec7 .txt h2 {
         font-size: 11px;
     }
-    .coontainer footer h3{
-        font-size:10px;
+
+    .coontainer footer h3 {
+        font-size: 10px;
     }
+
     .coontainer footer h3 img {
         width: 6%;
     }
@@ -1848,6 +1861,7 @@ width: fit-content;
         top: -5px;
         left: -5px !important;
     }
+
     button, .coontainer .mob-sec4 .txt button {
         width: fit-content;
         font-size: 7px;
@@ -1862,54 +1876,65 @@ width: fit-content;
     }
 
     .coontainer .sec5 .cerds .main-crd {
-        padding:6px;
+        padding: 6px;
     }
+
     .coontainer .sec5 .cerds .main-crd .crd .txt .price {
         font-size: 11px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt h3{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt h3 {
         font-size: 8px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt p{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt p {
         font-size: 6px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .txt .price img{
+
+    .coontainer .sec5 .cerds .main-crd .crd .txt .price img {
         width: 40%;
     }
-    .coontainer .sec5 .cerds .main-crd .crd .img img{
+
+    .coontainer .sec5 .cerds .main-crd .crd .img img {
         width: 100%;
         padding: 0 5px;
     }
-    .coontainer .sec5 .cerds .main-crd .content h2{
+
+    .coontainer .sec5 .cerds .main-crd .content h2 {
         font-size: 14px;
     }
+
     .coontainer .sec5 .cerds .main-crd .content img {
         width: 30px;
-        height:40px;
+        height: 40px;
     }
-    .coontainer .sec5 .cerds .main-crd .crd{
-        padding:5px 0;
+
+    .coontainer .sec5 .cerds .main-crd .crd {
+        padding: 5px 0;
     }
 
 
-    .coontainer .sec6 .txt p{
-        font-size:9px;
-    line-height: 30px;
+    .coontainer .sec6 .txt p {
+        font-size: 9px;
+        line-height: 30px;
     }
+
     .coontainer .sec6 .img img {
         width: 40%;
     }
-    .coontainer .sec6 .img::after{
+
+    .coontainer .sec6 .img::after {
         height: 106%;
-    width: 44%;
-    top: -3%;
-    left: 28%;
+        width: 44%;
+        top: -3%;
+        left: 28%;
     }
-    .coontainer .sec8 .content p{
+
+    .coontainer .sec8 .content p {
         font-size: 12px;
     }
-    
-    .coontainer .sec7 .sbar button{
+
+    .coontainer .sec7 .sbar button {
         display: flex;
         align-items: center;
         width: 50px;
@@ -1918,7 +1943,8 @@ width: fit-content;
         transform: translate(-21px, -27px);
 
     }
-    .coontainer footer h3{
-        font-size:7px;
+
+    .coontainer footer h3 {
+        font-size: 7px;
     }
 }
