@@ -11,13 +11,15 @@ let counter = setInterval(function () {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   for (let i = 0; i < 4; i++) {
-    document.getElementsByClassName("days")[i].innerHTML = days;
+    document.getElementsByClassName("days")[i].textContent = days;
+  }
+  for (let i = 0; i < 7; i++) {
     document.getElementsByClassName("hr")[i].innerHTML = hours;
     document.getElementsByClassName("min")[i].innerHTML = minutes;
     document.getElementsByClassName("secend")[i].innerHTML = seconds;
+    
   }
-  //   document.getElementsByClassName("days")[2].innerHTML = days;
-  //   document.getElementsByClassName("days")[1].innerHTML = days;
+ 
 
   if (distance < 0) {
     clearInterval(x);

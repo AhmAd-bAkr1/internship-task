@@ -875,8 +875,9 @@ body {
     display: flex;
     align-items: center;
     padding: 50px 0;
-    padding-right: 20%;
     padding-bottom: 100px;
+    padding-right: 20%;
+
 }
 
 .coontainer .sec6 .img {
@@ -1501,6 +1502,8 @@ body {
     .coontainer .sec6 {
         flex-direction: column;
         text-align: center;
+    padding-right:0;
+
     }
 
     .coontainer .sec6 .rate .icn-rate {
@@ -1614,6 +1617,9 @@ body {
 
     .day {
         text-align: center;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 
     .coontainer .mob-sec2 .active {
