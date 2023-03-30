@@ -35,7 +35,18 @@
           <img src="icons-svg/EG-flag.svg" alt="" />
           <h3>تسليم ل مصر</h3>
           <img src="icons-svg/Vector.svg" alt="" />
+
+          <div class="dropDown hide">
+            <ul>
+              <li>
+                <img src="icons-svg/SA.svg" alt="" />
+                <h3>تسليم ل السعودية</h3>
+              </li>
+            </ul>
+          </div>
         </div>
+
+
 
         <div class="container">
           <form class="d-flex Sbar">
@@ -47,6 +58,13 @@
         <div class="lang">
           <h3>عربى</h3>
           <img src="icons-svg/Vector.svg" alt="" />
+          <div class="dropDown hide">
+            <ul>
+              <li>English</li>
+              <li>French</li>
+              <li>German</li>
+            </ul>
+          </div>
         </div>
 
         <div class="advertise">
@@ -62,7 +80,15 @@
             <ul class="navbar-nav">
               <div class="dropdown">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">تسوق حسب الاقسام</a>
+                  <a class="nav-link active p-drop" aria-current="page" href="#">تسوق حسب الاقسام</a>
+                  <div class="dropDown hide">
+                    <ul>
+                      <li>الملابس الرجالية</li>
+                      <li>الملابس النسائية</li>
+                      <li>اطفال</li>
+                      <li>اجهزة منزلية</li>
+                    </ul>
+                  </div>
                 </li>
 
                 <img src="icons-svg/Vector.svg" alt="" />
@@ -110,11 +136,27 @@
           <img src="icons-svg/EG-flag.svg" alt="" />
           <h3>تسليم ل مصر</h3>
           <img src="icons-svg/W-Vector.svg" alt="" />
+
+          <div class="dropDown hide">
+            <ul>
+              <li>
+                <img src="icons-svg/SA.svg" alt="" />
+                <h3>تسليم ل السعودية</h3>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="lang">
           <h3>عربى</h3>
           <img src="icons-svg/W-Vector.svg" alt="" />
+          <div class="dropDown hide">
+            <ul>
+              <li>English</li>
+              <li>French</li>
+              <li>German</li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
@@ -135,7 +177,7 @@
       <div class="landing">
         <div class="main-img">
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators flex-row-reverse">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -161,25 +203,22 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
               data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"><svg width="30" height="30"
-                  viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="15" transform="matrix(-1 0 0 1 30 0)" fill="#C4C4C4" fill-opacity="0.7" />
-                  <path
-                    d="M17.71 18.88L13.83 15L17.71 11.12C18.1 10.73 18.1 10.1 17.71 9.70998C17.32 9.31998 16.69 9.31998 16.3 9.70998L11.71 14.3C11.32 14.69 11.32 15.32 11.71 15.71L16.3 20.3C16.69 20.69 17.32 20.69 17.71 20.3C18.09 19.91 18.1 19.27 17.71 18.88Z"
-                    fill="#323232" />
-                </svg></span>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" transform="matrix(-1 0 0 1 30 0)" fill="#C4C4C4" fill-opacity="0.7" />
+                <path
+                  d="M17.71 18.88L13.83 15L17.71 11.12C18.1 10.73 18.1 10.1 17.71 9.70998C17.32 9.31998 16.69 9.31998 16.3 9.70998L11.71 14.3C11.32 14.69 11.32 15.32 11.71 15.71L16.3 20.3C16.69 20.69 17.32 20.69 17.71 20.3C18.09 19.91 18.1 19.27 17.71 18.88Z"
+                  fill="#323232" />
+              </svg>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
               data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true">
-                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="15" cy="15" r="15" fill="#C4C4C4" fill-opacity="0.7" />
-                  <path
-                    d="M12.29 18.88L16.17 15L12.29 11.12C11.9 10.73 11.9 10.1 12.29 9.70998C12.68 9.31998 13.31 9.31998 13.7 9.70998L18.29 14.3C18.68 14.69 18.68 15.32 18.29 15.71L13.7 20.3C13.31 20.69 12.68 20.69 12.29 20.3C11.91 19.91 11.9 19.27 12.29 18.88Z"
-                    fill="#323232" />
-                </svg>
-              </span>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#C4C4C4" fill-opacity="0.7" />
+                <path
+                  d="M12.29 18.88L16.17 15L12.29 11.12C11.9 10.73 11.9 10.1 12.29 9.70998C12.68 9.31998 13.31 9.31998 13.7 9.70998L18.29 14.3C18.68 14.69 18.68 15.32 18.29 15.71L13.7 20.3C13.31 20.69 12.68 20.69 12.29 20.3C11.91 19.91 11.9 19.27 12.29 18.88Z"
+                  fill="#323232" />
+              </svg>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -187,6 +226,8 @@
         <div class="mob-main-img">
           <img src="imgs/mob-main-img.png" alt="" />
         </div>
+
+
         <div class="small-imgs">
           <div class="crd crd1">
             <img src="imgs/1.png" alt="" />
@@ -221,6 +262,69 @@
             <span>موبايلات</span>
           </div>
         </div>
+
+        <div class="small-mob">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+            data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-indicators flex-row-reverse bulits">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="small-imgs mob-v">
+                  <div class="crd crd1">
+                    <img src="imgs/1.png" alt="" />
+                    <span>ادوات تجميل</span>
+                  </div>
+                  <div class="crd crd2">
+                    <img src="imgs/2.png" alt="" />
+                    <span>ملابس نسائية</span>
+                  </div>
+                  <div class="crd crd3">
+                    <img src="imgs/3.png" alt="" />
+                    <span>ملابس رجالية</span>
+                  </div>
+                  <div class="crd crd4">
+                    <img src="imgs/4.png" alt="" />
+                    <span>العاب</span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="small-imgs mob-v">
+                  <div class="crd crd5">
+                    <img src="imgs/5.png" alt="" />
+                    <span>ساعات ذكية</span>
+                  </div>
+                  <div class="crd crd6">
+                    <img src="imgs/6.png" alt="" />
+                    <span>إلكترونيات</span>
+                  </div>
+                  <div class="crd crd7">
+                    <img src="imgs/7.png" alt="" />
+                    <span>كاميرات</span>
+                  </div>
+                  <div class="crd crd8">
+                    <img src="imgs/8.png" alt="" />
+                    <span>موبايلات</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
         <div class="brands">
           <div class="txt">
             <h1>أفضل العلامات التجارية</h1>
@@ -306,7 +410,20 @@
               <p>sec</p>
             </div>
           </div>
-          <img src="imgs/card3.png" class="card-img-top" alt="..." />
+          <div class="img">
+            <img src="imgs/card3.png" class="card-img-top" alt="..." />
+            <div class="fev">
+              <div class="conaine">
+                <img src="icons-svg/remove_red_eye.svg" alt="">
+              </div>
+              <div class="conaine">
+                <img src="icons-svg/Heart_01.svg" alt="">
+              </div>
+              <div class="conaine">
+                <img src="icons-svg/shopping_cart2.svg" alt="">
+              </div>
+            </div>
+          </div>
           <div class="card-body">
             <p class="card-text">حذاء نسائى للأناقة والراحة</p>
             <div class="details">
@@ -498,16 +615,18 @@
 
         <button type="button" class="btn rounded-pill">المزيد</button>
       </div>
-      
-      
+
+
       <div class="txt text">
         <p class="p">عروض خاصة من أجلك</p>
         <h2 class="h2">
           كل <span>خصم</span> نقوم بتقديمه هو الافضل في السوق!
         </h2>
-        <button type="button" class="btn rounded-pill">
-          تخفيضات لـ 40% إغتنم الفرصة الاّن
-        </button>
+        <div class="bton">
+          <button type="button" class="btn rounded-pill">
+            تخفيضات لـ 40% إغتنم الفرصة الاّن
+          </button>
+        </div>
       </div>
     </section>
     <section class="sec3">
@@ -524,7 +643,20 @@
           </div>
         </div>
         <div class="card">
-          <img src="imgs/card3.png" class="card-img-top" alt="..." />
+          <div class="img">
+            <img src="imgs/card3.png" class="card-img-top" alt="..." />
+            <div class="fev">
+              <div class="conaine">
+                <img src="icons-svg/remove_red_eye.svg" alt="">
+              </div>
+              <div class="conaine">
+                <img src="icons-svg/Heart_01.svg" alt="">
+              </div>
+              <div class="conaine">
+                <img src="icons-svg/shopping_cart2.svg" alt="">
+              </div>
+            </div>
+          </div>
           <div class="card-body">
             <p class="card-text">حذاء نسائى للأناقة والراحة</p>
             <div class="details">
@@ -625,15 +757,15 @@
           </div>
         </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-            data-bs-slide="prev">
-            </span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
-            data-bs-slide="next">
-            <span class="visually-hidden">Next</span>
-          </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="prev">
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="next">
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
     <section class="sec4">
@@ -683,11 +815,15 @@
           <p>عروض لمدة 24 ساعة تصفح المنتجات الان قبل نفاذ الكمية</p>
         </div>
       </div>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false"
+        data-bs-interval="false">
         <div class="carousel-indicators flex-row-reverse bulits">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -696,25 +832,25 @@
                 <img src="imgs/S4-6.png" alt="" />
                 <h3>أحذية</h3>
               </div>
-  
+
               <div class="crd crd2">
                 <img src="imgs/S4-5.png" alt="" />
                 <h3>أدوات تجميل</h3>
               </div>
-  
+
             </div>
           </div>
           <div class="carousel-item">
             <div class="crds">
               <div class="crd crd3">
-            <img src="imgs/S4-4.png" alt="" />
-            <h3>فرش</h3>
-          </div>
-          <div class="crd crd4">
-            <img src="imgs/S4-3.png" alt="" />
-            <h3>عطور</h3>
-          </div>
-  
+                <img src="imgs/S4-4.png" alt="" />
+                <h3>فرش</h3>
+              </div>
+              <div class="crd crd4">
+                <img src="imgs/S4-3.png" alt="" />
+                <h3>عطور</h3>
+              </div>
+
             </div>
           </div>
           <div class="carousel-item">
@@ -730,17 +866,27 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </section>
     <section class="sec5">
       <div class="details">
+        <div class="icon icon1">
+          <img src="icons-svg/Ellipse 18.svg" alt="">
+          <img class="vector" src="icons-svg/Vector2.svg" alt="">
+        </div>
         <h1>متاجر مميزة</h1>
+        <div class="icon icon2">
+          <img src="icons-svg/Ellipse 18.svg" alt="">
+          <img class="vector2" src="icons-svg/Vector2.svg" alt="">
+        </div>
       </div>
 
       <div class="cerds">
@@ -794,7 +940,7 @@
               </div>
             </div>
           </div>
-          <button id="loader"  type="button" class="btn rounded-pill loder">المزيد</button>
+          <button id="loader" type="button" class="btn rounded-pill loder">المزيد</button>
         </div>
         <div class="main-crd main2">
           <div class="content">
@@ -902,6 +1048,201 @@
         </div>
       </div>
     </section>
+    <section class="sec5 mob-sec5">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
+        data-bs-touch="false">
+        <div class="carousel-indicators flex-row-reverse bulits">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cerds">
+              <div class="main-crd main1">
+                <div class="content">
+                  <h2>متجر ماء الذهب</h2>
+                  <img src="imgs/mc1-logo.png" alt="" />
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc1-c1.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc1-c2.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc1-c3.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="loader" type="button" class="btn rounded-pill loder">المزيد</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cerds">
+              <div class="main-crd main2">
+                <div class="content">
+                  <h2>متجر ماء الذهب</h2>
+                  <img src="imgs/mc2-logo.png" alt="" />
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc2-c1.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc2-c2.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc2-c3.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="loader1" type="button" class="btn rounded-pill loder">المزيد</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cerds">
+              <div class="main-crd active main3">
+                <div class="content">
+                  <h2>متجر ماء الذهب</h2>
+                  <img src="imgs/mc1-logo.png" alt="" />
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc3-c1.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc3-c2.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="crd">
+                  <div class="img">
+                    <img src="imgs/mc3-c3.png" alt="" />
+                  </div>
+                  <div class="txt">
+                    <h3>موبايل سامسونج A70</h3>
+                    <p>لون ابيض انيق وجذاب</p>
+                    <div class="price">
+                      <img src="icons-svg/rate.svg" alt="" />
+                      <div class="pric">
+                        <span class="price" dir="ltr">650 SAR</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn rounded-pill loder">المزيد</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
     <section class="sec6">
       <div class="img">
         <img src="imgs/shady-img.png" alt="" />
@@ -919,6 +1260,14 @@
             استمتعت كثيرا بتصفح المتجر وكانت تجربة مميزة . قمت بالشراء ووصلت
             المنتجات عالية الجودة قبل الموعد المحدد.
           </p>
+        </div>
+        <div class="icun icon1">
+          <img src="icons-svg/Ellipse 18.svg" alt="">
+          <img class="vector" src="icons-svg/Vector2.svg" alt="">
+        </div>
+        <div class="icun2 icon2">
+          <img src="icons-svg/Ellipse 18.svg" alt="">
+          <img class="vector2" src="icons-svg/Vector2.svg" alt="">
         </div>
       </div>
     </section>
@@ -981,6 +1330,39 @@
         <img src="icons-svg/heart.svg" /> بواسطة Monaya
       </h3>
     </footer>
+
+
+    <section class="sec9">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="icons-svg/local_offer.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            العروض
+          </a>
+
+          <a class="navbar-brand" href="#">
+            <img src="icons-svg/person.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            حسابى
+          </a>
+
+          <a class="navbar-brand" href="#">
+            <img src="icons-svg/home.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            الرئيسية
+          </a>
+          <a class="navbar-brand" href="#">
+            <img src="icons-svg/segment.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            الاقسام
+          </a>
+
+          <a class="navbar-brand" href="#">
+            <img src="icons-svg/shopping_cart.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            عربه التسوق
+          </a>
+
+        </div>
+      </nav>
+    </section>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
