@@ -13,7 +13,7 @@ let counter = setInterval(function () {
   for (let i = 0; i < 4; i++) {
     document.getElementsByClassName("days")[i].textContent = days;
   }
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 8; i++) {
     document.getElementsByClassName("hr")[i].innerHTML = hours;
     document.getElementsByClassName("min")[i].innerHTML = minutes;
     document.getElementsByClassName("secend")[i].innerHTML = seconds;
