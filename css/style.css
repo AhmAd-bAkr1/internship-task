@@ -344,8 +344,12 @@ body {
 }
 
 .coontainer .sec1 .landing .brands .imgs {
-    margin: auto;
-    align-items: center;
+   height: 100px;
+   margin: 20px 0;
+   margin-bottom: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .coontainer .sec1 .landing .brands .imgs img {
@@ -809,6 +813,7 @@ body {
     display: flex;
     padding: 20px 0;
     padding-bottom: 20px;
+    border-bottom: 1px solid #C4C4C4;
 }
 
 .coontainer .sec5 .cerds .main-crd .crd .img img {
@@ -1312,7 +1317,21 @@ body {
     .coontainer .sec5 .cerds .main-crd {
         width: fit-content;
         margin: 15px;
+        padding: 0;
     }
+    .coontainer .sec5 .cerds .main-crd .crd{
+        padding: 25px;
+    }
+    .coontainer .sec5 .cerds .main-crd .content{
+        padding: 25px;
+    }
+    .coontainer .sec5 .cerds .main-crd button{
+        margin: 30px auto;
+        position: initial;
+        display: block;
+
+    }
+
 }
 
 @media(max-width:1100px) {
@@ -1973,7 +1992,7 @@ body {
     }
 
     .coontainer .sec5 .cerds .main-crd .crd {
-        padding: 0;
+        padding:10px 0;
     }
 
     .coontainer .sec5 .cerds .main-crd button {

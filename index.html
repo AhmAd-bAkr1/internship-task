@@ -50,7 +50,7 @@
 
         <div class="container">
           <form class="d-flex Sbar">
-            <input class="form-control me-2" type="search" placeholder="عن ماذا تبحث؟" aria-label="Search" />
+            <input class="form-control me-2" type="text" placeholder="عن ماذا تبحث؟" aria-label="Search" />
             <img class="icon" src="icons-svg/search.svg" alt="" />
           </form>
         </div>
@@ -167,7 +167,7 @@
         </div>
         <div class="cntainer">
           <form class="d-flex Sbar">
-            <input class="form-control me-2" type="search" placeholder="عن ماذا تبحث؟" aria-label="Search" />
+            <input class="form-control me-2" type="text" placeholder="عن ماذا تبحث؟" aria-label="Search" />
             <img class="icon" src="icons-svg/search.svg" alt="" />
           </form>
         </div>
@@ -329,11 +329,45 @@
           <div class="txt">
             <h1>أفضل العلامات التجارية</h1>
           </div>
-          <div class="imgs">
-            <img src="imgs/brand3.png" alt="" />
-            <img src="imgs/brand2.png" alt="" />
-            <img src="imgs/brand1.png" alt="" />
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators flex-row-reverse bulits">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="imgs">
+            
+                  <img src="imgs/brand3.png" alt="" />
+                  <img src="imgs/brand3.png" alt="" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgs">
+
+                  <img src="imgs/brand2.png" alt="" />
+                  <img src="imgs/brand2.png" alt="" />
+                 
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imgs">
+                  <img src="imgs/brand1.png" alt="" />
+                  <img src="imgs/brand1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+        
         </div>
       </div>
 
@@ -1281,7 +1315,7 @@
         <h2>احصل على خصم<span>20%</span> عند الاشتراك فى قائمة المراسلات</h2>
       </div>
       <div class="sbar">
-        <input class="form-control me-2" type="search" placeholder="Enter your Email" aria-label="Search" />
+        <input class="form-control me-2" type="text" placeholder="Enter your Email" aria-label="Search" />
         <button type="button" class="btn rounded-pill">اشترك الان</button>
       </div>
     </section>
@@ -1366,7 +1400,6 @@
         </div>
       </nav>
     </section>
-
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
