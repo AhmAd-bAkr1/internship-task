@@ -675,8 +675,8 @@ body {
 .coontainer .sec4 .crds .crd,
 .coontainer .mob-sec4 .crds .crd {
     position: relative;
-    z-index: 10;
     margin: 10px;
+    z-index: 0;
 
 }
 
@@ -1295,6 +1295,9 @@ cursor: pointer;
     height: 100%;
     background-color: #C4C4C4;
     right: 0;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    width: 50%;
 }
 
 @media(max-width:1210px) {
