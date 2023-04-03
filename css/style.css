@@ -331,7 +331,8 @@ body {
 
 .coontainer .sec1 .landing .brands {
     text-align: center;
-    padding-bottom: 50px;
+    padding: 40px 0;
+    background-color: rgba(242, 242, 242, 1);
 }
 
 .coontainer .sec1 .landing .brands h1 {
@@ -661,6 +662,7 @@ body {
 .coontainer .sec4 .txt button,
 .coontainer .mob-sec4 .txt button {
     background-color: #FFFFFF;
+    width: 120px;
 }
 
 .coontainer .sec4 .crds,
@@ -812,8 +814,6 @@ body {
 .coontainer .sec5 .cerds .main-crd .crd {
     display: flex;
     padding: 20px 0;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #C4C4C4;
 }
 
 .coontainer .sec5 .cerds .main-crd .crd .img img {
@@ -1309,7 +1309,10 @@ cursor: pointer;
         left: 105%;
 
     }
+    .coontainer .sec5 .cerds .main-crd .crd {
+        border-bottom: 1px solid #C4C4C4;
 
+    }
     .coontainer .sec4 .crds,
     .coontainer .mob-sec4 .crds {
         margin: 0;
@@ -1534,7 +1537,7 @@ cursor: pointer;
     .coontainer .sec5 .cerds .main-crd button {
         position: static;
         display: block;
-        margin: 20px auto 0 auto;
+        margin: 20px auto;
 
     }
 
@@ -2090,6 +2093,11 @@ cursor: pointer;
         border-radius: 30px;
 
     }
+    .coontainer .sec4 .txt button,
+.coontainer .mob-sec4 .txt button {
+    font-size: 12px;
+    width: 100px;
+}
 }
 
 @media(max-width:255px) {
